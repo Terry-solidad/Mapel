@@ -119,10 +119,10 @@ The website uses a shared external stylesheet and does not require JavaScript or
 If the project is hosted on GitHub, clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone terry1703.github.io/Mapel/
+
 ```
 
-Replace `YOUR_REPOSITORY_URL` with the actual repository URL.
 
 Alternatively, download the project files and extract them into a folder named `maple-and-mortar`.
 
