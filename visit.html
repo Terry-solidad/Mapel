@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find Maple & Mortar — location, hours, and a reservation form to save a table or request a private event."
+    />
+    <title>Visit — Maple &amp; Mortar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">M&amp;M</span>
+          <span class="brand-name">Maple &amp; Mortar</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="visit.html" aria-current="page">Visit</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container">
+          <p class="eyebrow eyebrow-center">Come on in</p>
+          <h1 class="page-title">Find us &amp; save your seat</h1>
+          <p class="page-lede">
+            We're on the corner of Elm and 3rd in Hollow Green. Walk in any
+            time, or reserve a table below for busy mornings and private
+            gatherings.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container visit-grid">
+          <div class="visit-info">
+            <h2>Location</h2>
+            <address class="visit-address">
+              142 Elm Street<br />
+              Hollow Green, OR 97000
+            </address>
+            <p>
+              <a href="tel:+15035550142">(503) 555-0142</a><br />
+              <a href="mailto:hello@mapleandmortar.example">hello@mapleandmortar.example</a>
+            </p>
+            <p>
+              Street parking is available on Elm and the adjacent side streets.
+              The Hollow Green transit stop is a four-minute walk.
+            </p>
+
+            <h2>Hours</h2>
+            <div class="table-wrapper">
+              <table class="hours-table">
+                <caption>Weekly hours</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Open</th>
+                    <th scope="col">Close</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Monday</th>
+                    <td>6:30 a.m.</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tuesday</th>
+                    <td>6:30 a.m.</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Wednesday</th>
+                    <td>6:30 a.m.</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Thursday</th>
+                    <td>6:30 a.m.</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Friday</th>
+                    <td>6:30 a.m.</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Saturday</th>
+                    <td>7:00 a.m.</td>
+                    <td>8:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sunday</th>
+                    <td>8:00 a.m.</td>
+                    <td>5:00 p.m.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="visit-form-col">
+            <h2>Reserve a table</h2>
+            <p class="form-intro">
+              Tell us when you're coming and what you need. We'll hold a spot
+              and confirm by email. For private events of 10 or more, use the
+              notes field to describe your group.
+            </p>
+            <form class="reserve-form" action="visit.html" method="post">
+              <div class="form-row">
+                <label for="name">Full name <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  placeholder="Jane Doe"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email <span class="req">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  placeholder="jane@example.com"
+                />
+              </div>
+
+              <div class="form-row form-row-2">
+                <div>
+                  <label for="date">Date <span class="req">*</span></label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div>
+                  <label for="time">Time <span class="req">*</span></label>
+                  <input type="time" id="time" name="time" required />
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div>
+                  <label for="party">Party size <span class="req">*</span></label>
+                  <select id="party" name="party" required>
+                    <option value="">Choose&hellip;</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3">3 people</option>
+                    <option value="4">4 people</option>
+                    <option value="5">5 people</option>
+                    <option value="6">6 people</option>
+                    <option value="event">10+ (private event)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="seating">Seating preference</label>
+                  <select id="seating" name="seating">
+                    <option value="any">No preference</option>
+                    <option value="window">Window table</option>
+                    <option value="quiet">Quiet corner</option>
+                    <option value="counter">Counter bar</option>
+                    <option value="patio">Patio</option>
+                  </select>
+                </div>
+              </div>
+
+              <fieldset class="form-row">
+                <legend>How can we make your visit better?</legend>
+                <ul class="check-list">
+                  <li>
+                    <input type="checkbox" id="wifi" name="extras" value="wifi" />
+                    <label for="wifi">Reserve a quiet table with WiFi</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="pastry" name="extras" value="pastry" />
+                    <label for="pastry">Hold a pastry box for pickup</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="oat" name="extras" value="oat" />
+                    <label for="oat">Let the barista know I prefer oat milk</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="form-row">
+                <label for="notes">Notes for the team</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="4"
+                  placeholder="Allergies, event details, seating requests&hellip;"
+                ></textarea>
+              </div>
+
+              <div class="form-row form-consent">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">
+                  I understand this is a fictional demo form and no real
+                  reservation will be made.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Request reservation</button>
+                <button type="reset" class="btn btn-ghost">Clear form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <span class="brand-mark">M&amp;M</span>
+          <p>Maple &amp; Mortar Coffee &amp; Bakery</p>
+          <p class="footer-tag">Slow coffee, warm rooms.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Visit</h3>
+          <address>
+            142 Elm Street<br />
+            Hollow Green, OR 97000<br />
+            <a href="tel:+15035550142">(503) 555-0142</a>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3>Hours</h3>
+          <ul class="footer-hours">
+            <li>Mon&ndash;Fri &middot; 6:30a &ndash; 7:00p</li>
+            <li>Sat &middot; 7:00a &ndash; 8:00p</li>
+            <li>Sun &middot; 8:00a &ndash; 5:00p</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="visit.html">Find Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2025 Maple &amp; Mortar. A fictional coffee shop.</p>
+      </div>
+    </footer>
+  </body>
+</html>
